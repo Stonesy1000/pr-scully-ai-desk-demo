@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="workflow.css">
 </head>
 <body>
   <div class="concept-bar">Private concept demonstration • No client data • Not a live legal service</div>
@@ -20,6 +21,7 @@
     </a>
     <nav aria-label="Primary navigation">
       <a href="#opportunity">The idea</a>
+      <a href="#workflow">Workflow</a>
       <a href="#demo">Try the demo</a>
       <a href="#pilot">Pilot plan</a>
     </nav>
@@ -56,6 +58,23 @@
       </div>
     </section>
 
+    <section class="workflow-section" id="workflow">
+      <div class="section-intro">
+        <span class="eyebrow">Estimated operating model</span>
+        <h2>One matter, one controlled history</h2>
+        <p>Every meaningful action becomes a dated matter event. Internal work remains private; approved milestones can be published to the client portal.</p>
+      </div>
+      <div class="workflow-map">
+        <article><span>01</span><i>New enquiry</i><h3>Capture</h3><p>Structured facts, documents, source and urgency indicators.</p><b>Enquiry log created</b></article><div class="flow-arrow">→</div>
+        <article><span>02</span><i>Human decision</i><h3>Review</h3><p>Conflict check, eligibility, limitation and funding review.</p><b>Decision recorded</b></article><div class="flow-arrow">→</div>
+        <article><span>03</span><i>Client accepted</i><h3>Onboard</h3><p>ID, client-care documents, authority and portal invitation.</p><b>Matter opened</b></article><div class="flow-arrow">→</div>
+        <article><span>04</span><i>Work in progress</i><h3>Progress</h3><p>Evidence, tasks, calls, advice, deadlines and correspondence.</p><b>Continuous audit trail</b></article><div class="flow-arrow">→</div>
+        <article><span>05</span><i>Approved information</i><h3>Update</h3><p>Plain-English milestone, document request or secure message.</p><b>Client portal updated</b></article><div class="flow-arrow">→</div>
+        <article><span>06</span><i>Outcome</i><h3>Close</h3><p>Settlement, final documents, feedback and retention controls.</p><b>Closure record sealed</b></article>
+      </div>
+      <div class="log-model"><div><span class="eyebrow">How the log works</span><h3>AI can prepare an event. A person decides whether it becomes part of the matter.</h3></div><ol><li><b>Source captured</b><span>Email, call, document, form or staff action.</span></li><li><b>Draft event prepared</b><span>Summary, actions, dates and source links.</span></li><li><b>Human reviewed</b><span>Approver, time and any edits recorded.</span></li><li><b>Visibility chosen</b><span>Internal only or safe for the client portal.</span></li></ol></div>
+    </section>
+
     <section class="outcomes" id="opportunity">
       <article><b>01</b><h3>Win</h3><p>Respond to suitable enquiries faster and understand which sources create valuable matters.</p></article>
       <article><b>02</b><h3>Serve</h3><p>Prepare clearer updates while preserving the named case-handler relationship clients value.</p></article>
@@ -76,6 +95,8 @@
           <button class="nav-item" data-tab="briefing"><span>≡</span> Matter briefing</button>
           <button class="nav-item" data-tab="admin"><span>✓</span> Admin assistant</button>
           <button class="nav-item" data-tab="dashboard"><span>▦</span> Supervisor view</button>
+          <button class="nav-item" data-tab="log"><span>◷</span> Case activity log</button>
+          <button class="nav-item" data-tab="portal"><span>◎</span> Client portal</button>
           <div class="secure-label"><span>●</span> Concept data only</div>
         </aside>
 
@@ -114,6 +135,26 @@
             <div class="app-heading"><div><span class="step">4</span><h3>Supervisor attention view</h3><p>A simple action list — not another reporting burden.</p></div><span class="status live">SAMPLE DATA</span></div>
             <div class="dashboard-metrics"><div><strong>42</strong><span>new enquiries</span></div><div><strong>71%</strong><span>contacted in target</span></div><div class="amber"><strong>11</strong><span>awaiting documents</span></div><div class="red"><strong>6</strong><span>need attention</span></div></div>
             <table><thead><tr><th>Area</th><th>Signal</th><th>Owner</th><th>Next step</th></tr></thead><tbody><tr><td>Enquiries</td><td><b>4 not contacted</b></td><td>Intake</td><td><button>Call today</button></td></tr><tr><td>Matters</td><td><b>3 inactive &gt;21 days</b></td><td>Supervisors</td><td><button>Review list</button></td></tr><tr><td>Clients</td><td><b>8 updates overdue</b></td><td>Case handlers</td><td><button>Approve drafts</button></td></tr></tbody></table>
+          </section>
+
+          <section class="tab-panel" id="log">
+            <div class="app-heading"><div><span class="step">5</span><h3>Case activity log</h3><p>A chronological, attributable record of what happened and why.</p></div><span class="status live">AUDIT TRAIL</span></div>
+            <div class="log-controls"><button class="filter active">All events</button><button class="filter">Documents</button><button class="filter">Communications</button><button class="filter">Decisions</button><span>Fictional matter PS-10428</span></div>
+            <div class="timeline">
+              <article><div class="timeline-icon human">AB</div><div><header><strong>Medical report reviewed</strong><time>25 Aug 2026 · 14:42</time></header><p>Alasdair Brown confirmed the report is suitable for the next stage and requested two clarification points.</p><footer><span>Source: Orthopaedic report, v1</span><span class="visibility internal">Internal only</span></footer></div></article>
+              <article><div class="timeline-icon ai">✦</div><div><header><strong>Draft client update prepared</strong><time>25 Aug 2026 · 14:44</time></header><p>AI-assisted draft created from approved matter events. Awaiting case-handler review.</p><footer><span>Created by AI Desk · Draft v1</span><span class="visibility review">Review required</span></footer></div></article>
+              <article><div class="timeline-icon human">JD</div><div><header><strong>Client update approved and published</strong><time>25 Aug 2026 · 15:06</time></header><p>Jacqui reviewed the wording, removed an internal valuation reference and published the milestone.</p><footer><span>Approver: J. Dove · Draft v2</span><span class="visibility client">Client visible</span></footer></div></article>
+              <article><div class="timeline-icon system">↗</div><div><header><strong>Client portal notification delivered</strong><time>25 Aug 2026 · 15:07</time></header><p>Email notification delivered. No confidential matter details were included in the email.</p><footer><span>Message ID: DEMO-8821</span><span class="visibility system-tag">System event</span></footer></div></article>
+            </div>
+            <div class="integrity-note"><strong>Recommended control</strong><span>Events should be append-only for ordinary users. Corrections create a linked new event rather than silently overwriting history.</span></div>
+          </section>
+
+          <section class="tab-panel" id="portal">
+            <div class="portal-banner"><span>CLIENT VIEW</span>This screen contains only information specifically approved for the client.</div>
+            <div class="portal-head"><div><small>WELCOME BACK</small><h3>Sarah, here is your case update</h3><p>Matter reference PS-10428</p></div><button class="button-outline">Send a secure message</button></div>
+            <div class="portal-progress"><div class="progress-line"><span class="done">✓</span><i></i><span class="done">✓</span><i></i><span class="current">3</span><i></i><span>4</span><i></i><span>5</span></div><div class="progress-labels"><b>Case opened</b><b>Evidence gathered</b><b>Medical evidence</b><b>Negotiation</b><b>Outcome</b></div></div>
+            <div class="portal-grid"><article class="latest-update"><small>LATEST UPDATE · 25 AUGUST 2026</small><h4>Your medical report has been received</h4><p>Your case handler is reviewing the report. We have asked the expert to clarify two points. We will update you when the response arrives.</p><div><span>Published by Jacqui</span><button id="acknowledge-update">I’ve read this update</button></div></article><article class="portal-action"><small>ACTION NEEDED</small><h4>Please upload travel receipts</h4><p>Receipts for travel connected with your appointments will help us record your expenses.</p><button class="button" id="portal-upload">Choose files</button><em>Demo only — files are not uploaded</em></article></div>
+            <div class="portal-lower"><article><h4>Secure messages</h4><p><b>PR Scully · 25 Aug</b><br>We have received your medical report and will review it shortly.</p><a href="#">View all messages →</a></article><article><h4>Your documents</h4><p>12 documents shared with you<br>3 documents supplied by you</p><a href="#">Open document centre →</a></article><article><h4>Your contact</h4><p><b>Jacqui Dove</b><br>Case handler<br>0161 667 8260</p><a href="#">Send a secure message →</a></article></div>
           </section>
         </div>
       </div>
