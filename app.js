@@ -18,4 +18,5 @@ document.getElementById('extract-actions').addEventListener('click',()=>{documen
 document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');notify(`${button.textContent} selected — sample events shown`)}));
 document.getElementById('acknowledge-update').addEventListener('click',event=>{event.currentTarget.textContent='Read ✓';event.currentTarget.disabled=true;notify('Demo acknowledgement added to the matter log')});
 document.getElementById('portal-upload').addEventListener('click',()=>notify('Demo only — no files are uploaded or stored'));
+document.querySelectorAll('.management-switch button').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.management-switch button').forEach(b=>b.classList.remove('active'));button.classList.add('active');notify(`${button.textContent} management view selected`)}));
 document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();notify('In a live pilot this would open the source document')}));
